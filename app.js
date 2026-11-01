@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
           .join(', ');
         const total = [...cartItems.values()]
           .reduce((sum, item) => sum + item.price * item.quantity, 0);
-        feedback.textContent = `Pedido ${orderNumber} generado para ${nombre.value.trim()} (${email.value.trim()}). Productos: ${orderSummary}. Indicaciones: ${mensaje.value.trim()}. Total: ${formatPrice(total)}. Confirmación local: el pedido aún no se envía al establecimiento.`;
+        feedback.textContent = '¡Pedido exitoso! Gracias por elegir Café Verde.';
         feedback.classList.add('success');
         cartItems.clear();
         updateCart();
