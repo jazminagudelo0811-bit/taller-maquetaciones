@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Verde | Cafetería Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navegación -->
+  <header class="header">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">Café Verde</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#historia" class="nav-link">Historia</a></li>
+          <li><a href="#menu" class="nav-link">Menú</a></li>
+          <li><a href="#ubicacion" class="nav-link">Ubicación</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Portada -->
+    <section id="inicio" class="hero">
+      <div class="hero-content">
+        <h1>El arte del café en cada grano</h1>
+        <p>Café de especialidad preparado artesanalmente en un entorno cálido y acogedor.</p>
+        <a href="#menu" class="btn btn-primary">Ver Menú</a>
+      </div>
+    </section>
+
+    <!-- Historia -->
+    <section id="historia" class="section container">
+      <div class="section-header">
+        <h2>Nuestra Esencia</h2>
+        <p class="section-tagline">Tradición, frescura y dedicación en cada preparación</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>En <strong>Café Verde</strong> seleccionamos granos de origen único, tostados artesanalmente en lotes pequeños para resaltar sus notas aromáticas naturales. Acompañamos cada bebida con repostería horneada fresca cada mañana.</p>
+        </div>
+        <div class="about-card">
+          <h3>Nuestros Pilares</h3>
+          <p>🌱 <strong>Grano Seleccionado:</strong> Trato directo con pequeños caficultores.</p>
+          <p>☕ <strong>Tueste Cuidadoso:</strong> Sabores limpios y equilibrados.</p>
+          <p>🥐 <strong>Horneado Diario:</strong> Sin conservantes artificiales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menú Esencial -->
+    <section id="menu" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2>Nuestro Menú</h2>
+          <p class="section-tagline">Selección artesanal de la casa</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Espresso Doble" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Espresso Doble</h3>
+                <span class="price">$2.50</span>
+              </div>
+              <p>Extracción concentrada con notas a chocolate amargo.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=500&q=80" alt="Cappuccino Tradicional" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Cappuccino</h3>
+                <span class="price">$3.80</span>
+              </div>
+              <p>Espresso con leche texturizada y crema aterciopelada.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?auto=format&fit=crop&w=500&q=80" alt="Cold Brew" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Cold Brew</h3>
+                <span class="price">$4.20</span>
+              </div>
+              <p>Infusión en frío durante 18 horas, refrescante y sutil.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=500&q=80" alt="Croissant Mantequilla" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Croissant de Mantequilla</h3>
+                <span class="price">$2.80</span>
+              </div>
+              <p>Hojaldre artesanal crujiente horneado en el día.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=500&q=80" alt="Brownie Meloso" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Brownie con Nueces</h3>
+                <span class="price">$3.20</span>
+              </div>
+              <p>Cacao puro 70% con centro suave y nueces seleccionadas.</p>
+            </div>
+          </article>
+          <article class="menu-card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=500&q=80" alt="Tostada Masa Madre" loading="lazy">
+            <div class="menu-card-body">
+              <div class="menu-card-head">
+                <h3>Tostón Masa Madre</h3>
+                <span class="price">$4.50</span>
+              </div>
+              <p>Pan rústico con aguacate hass y semillas tostadas.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section id="ubicacion" class="section container">
+      <div class="section-header">
+        <h2>Ubicación y Horarios</h2>
+        <p class="section-tagline">Te esperamos en nuestro local</p>
+      </div>
+      <div class="location-grid">
+        <div class="location-info">
+          <h3>📍 Dirección</h3>
+          <p>Calle de los Olivos #42, Zona Centro (Frente al parque).</p>
+          <h3 style="margin-top: 1rem;">⏰ Horarios</h3>
+          <p>Lunes a Viernes: 7:30 AM – 8:00 PM<br>Sábados y Domingos: 8:30 AM – 9:00 PM</p>
+        </div>
+        <div class="location-map">
+          <iframe title="Mapa Café Verde" src="https://maps.google.com/maps?q=Floridablanca&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="280" style="border:0; border-radius: 8px;" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section section-alt">
+      <div class="container-small">
+        <div class="section-header">
+          <h2>Contáctanos</h2>
+          <p class="section-tagline">Envíanos un mensaje o consulta</p>
+        </div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" class="form-input" required>
+            <span class="error-msg" id="errorNombre"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico *</label>
+            <input type="email" id="email" class="form-input" required>
+            <span class="error-msg" id="errorEmail"></span>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje *</label>
+            <textarea id="mensaje" rows="4" class="form-input" required></textarea>
+            <span class="error-msg" id="errorMensaje"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+          <div class="form-feedback" id="formFeedback" role="alert"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Café Verde</strong> — Cafetería Artesanal de Especialidad</p>
+    <p style="font-size: 0.85rem; margin-top: 0.5rem; opacity: 0.8;">&copy; 2026 Café Verde. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
