@@ -73,6 +73,7 @@
                 <span class="price">$6.000 COP</span>
               </div>
               <p>Extracción concentrada con notas a chocolate amargo.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Espresso Doble" data-price="6000">Agregar al carrito</button>
             </div>
           </article>
           <article class="menu-card">
@@ -83,6 +84,7 @@
                 <span class="price">$9.000 COP</span>
               </div>
               <p>Espresso con leche texturizada y crema aterciopelada.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Cappuccino" data-price="9000">Agregar al carrito</button>
             </div>
           </article>
           <article class="menu-card">
@@ -93,6 +95,7 @@
                 <span class="price">$10.000 COP</span>
               </div>
               <p>Infusión en frío durante 18 horas, refrescante y sutil.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Cold Brew" data-price="10000">Agregar al carrito</button>
             </div>
           </article>
           <article class="menu-card">
@@ -103,6 +106,7 @@
                 <span class="price">$7.000 COP</span>
               </div>
               <p>Hojaldre artesanal crujiente horneado en el día.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Croissant de Mantequilla" data-price="7000">Agregar al carrito</button>
             </div>
           </article>
           <article class="menu-card">
@@ -113,6 +117,7 @@
                 <span class="price">$8.000 COP</span>
               </div>
               <p>Cacao puro 70% con centro suave y nueces seleccionadas.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Brownie con Nueces" data-price="8000">Agregar al carrito</button>
             </div>
           </article>
           <article class="menu-card">
@@ -123,6 +128,7 @@
                 <span class="price">$12.000 COP</span>
               </div>
               <p>Pan rústico con aguacate hass y semillas tostadas.</p>
+              <button type="button" class="btn btn-primary add-to-cart" data-name="Tostón Masa Madre" data-price="12000">Agregar al carrito</button>
             </div>
           </article>
         </div>
@@ -142,38 +148,51 @@
           <h3 style="margin-top: 1rem;">⏰ Horarios</h3>
           <p>Lunes a Viernes: 7:30 AM – 8:00 PM<br>Sábados y Domingos: 8:30 AM – 9:00 PM</p>
         </div>
-        <div class="location-map">
-          <iframe title="Mapa Café Verde" src="https://maps.google.com/maps?q=Floridablanca&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="280" style="border:0; border-radius: 8px;" loading="lazy"></iframe>
+        <div class="location-card">
+          <span class="location-card-icon" aria-hidden="true">☕</span>
+          <p class="location-card-label">Un espacio para disfrutar</p>
+          <h3>Tu próxima pausa favorita</h3>
+          <p>Visítanos junto al parque principal de Florida y disfruta de café y repostería artesanal.</p>
+          <a href="#menu" class="btn location-card-link">Descubrir el menú</a>
         </div>
       </div>
     </section>
 
     <!-- Contacto -->
     <section id="contacto" class="section section-alt">
-      <div class="container-small">
+      <div class="container">
         <div class="section-header">
-          <h2>Contáctanos</h2>
-          <p class="section-tagline">Envíanos un mensaje o consulta</p>
+          <h2>Finaliza tu pedido</h2>
+          <p class="section-tagline">Revisa tu carrito y déjanos tus datos</p>
         </div>
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="form-group">
-            <label for="nombre">Nombre completo *</label>
-            <input type="text" id="nombre" class="form-input" required>
-            <span class="error-msg" id="errorNombre"></span>
+        <div class="checkout-grid">
+          <div class="cart" aria-labelledby="cartTitle">
+            <h3 id="cartTitle">Tu carrito</h3>
+            <ul id="cartItems" class="cart-items" aria-live="polite">
+              <li>Tu carrito está vacío.</li>
+            </ul>
+            <p class="cart-total">Total: <strong id="cartTotal">$0 COP</strong></p>
           </div>
-          <div class="form-group">
-            <label for="email">Correo electrónico *</label>
-            <input type="email" id="email" class="form-input" required>
-            <span class="error-msg" id="errorEmail"></span>
-          </div>
-          <div class="form-group">
-            <label for="mensaje">Mensaje *</label>
-            <textarea id="mensaje" rows="4" class="form-input" required></textarea>
-            <span class="error-msg" id="errorMensaje"></span>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
-          <div class="form-feedback" id="formFeedback" role="alert"></div>
-        </form>
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input type="text" id="nombre" class="form-input" required>
+              <span class="error-msg" id="errorNombre"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" class="form-input" required>
+              <span class="error-msg" id="errorEmail"></span>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje o indicaciones del pedido *</label>
+              <textarea id="mensaje" rows="4" class="form-input" required></textarea>
+              <span class="error-msg" id="errorMensaje"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block" id="placeOrder" disabled>Confirmar pedido</button>
+            <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+          </form>
+        </div>
       </div>
     </section>
   </main>
